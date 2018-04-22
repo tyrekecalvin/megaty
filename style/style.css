@@ -158,23 +158,38 @@ h2 {
 
 
 .grid div {
-
 	background-color: rgba(0, 0, 0, 0.5);
-
 	padding: 0.2em;
-
 	color: #fff;
 
 }
 
 
 .grid {
-
 	display: grid;
-
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
 	grid-auto-rows: minmax(100px, auto);
 	grid-gap: 9px 9px;
 
+}
+.track-list{
+  margin: auto;
+  padding: 20px;
+  width:30%;
+}
+.ncc{
+    cursor: pointer;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;   /*  sit on top */
+  padding-top: 25%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;  /* Enable scroll if need  */
+  background:rgba(0,0,0,0.4);
 }
